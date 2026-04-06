@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UniVerse Events</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <div class="bg-glow glow-1"></div>
+  <div class="bg-glow glow-2"></div>
+
+  <header class="navbar">
+    <div class="logo">UniVerse Events</div>
+
+    <nav class="nav-links">
+      <a href="#events">Events</a>
+      <a href="#register">Register</a>
+      <a href="#info">Info</a>
+    </nav>
+
+    <a href="#events" class="nav-btn">Browse Events</a>
+  </header>
+
+  <main class="hero">
+    <div class="announcement">
+      <span class="dot"></span>
+      Registrations Now Open — AY 2024–25
+    </div>
+
+    <h1>
+      Your Campus.<br />
+      <span>Your Events.</span><br />
+      Your Moment.
+    </h1>
+
+    <p>
+      Discover and register for Tech Fests, Cultural Shows, Workshops,
+      Hackathons and more — all in one place. Powered by Google Cloud.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#events" class="btn primary">Explore Events</a>
+      <a href="#info" class="btn secondary">Learn More</a>
+    </div>
+  </main>
+
+  <section class="events-preview" id="events">
+    <div class="section-title">
+      <p>Featured Events</p>
+      <h2>Choose your next campus experience</h2>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <div class="card-tag">Tech</div>
+        <h3>Tech Fest 2026</h3>
+        <p>Innovation challenges, coding contests, robotics and startup showcases.</p>
+        <button>Register</button>
+      </div>
+
+      <div class="card">
+        <div class="card-tag">Culture</div>
+        <h3>Cultural Night</h3>
+        <p>Dance, music, drama and unforgettable college performances.</p>
+        <button>Register</button>
+      </div>
+
+      <div class="card">
+        <div class="card-tag">Workshop</div>
+        <h3>AI Workshop</h3>
+        <p>Learn AI tools, prompt design and cloud-powered smart applications.</p>
+        <button>Register</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="register-section" id="register">
+    <div class="form-box">
+      <div class="section-title left">
+        <p>Quick Registration</p>
+        <h2>Reserve your seat</h2>
+      </div>
+
+      <form id="registrationForm">
+        <div class="input-group">
+          <input type="text" placeholder="Full Name" required />
+          <input type="email" placeholder="Email Address" required />
+        </div>
+
+        <div class="input-group">
+          <input type="text" placeholder="Department" required />
+          <select required>
+            <option value="">Select Event</option>
+            <option>Tech Fest 2026</option>
+            <option>Cultural Night</option>
+            <option>AI Workshop</option>
+          </select>
+        </div>
+
+        <textarea placeholder="Any message or note..." rows="5"></textarea>
+
+        <button type="submit" class="submit-btn">Submit Registration</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="info-section" id="info">
+    <div class="info-box">
+      <h2>Why this frontend looks professional</h2>
+      <p>
+        This UI is built with futuristic gradients, soft neon glow, premium button styling,
+        glassmorphism cards, a grid-tech background and modern typography to match
+        a pro-level college event portal.
+      </p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
